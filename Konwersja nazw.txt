@@ -1,0 +1,13 @@
+P_yeei_TT13            : TT13
+P_yeei_ATCC_BAA-599    : ATCC_599
+P_yeei_CCUG_32052      : CCUG_32052
+P_yeei_CCUG_17731      : CCUG_17731 
+P_yeei_CCUG_32054      : CCUG_32054  
+P_yeei_CCUG_13493      : CCUG_13493  
+P_yeei_FDAARGOS_252    : FDA_252  
+P_yeei_CCUG_54214      : CCUG_54214
+P_yeei_LM_20           : LM_20  
+P_yeei_G1212           : G1212
+P_yeei_CCUG_46822      : CCUG_46822   
+P_yeei_CCUG_32053      : CCUG_32053   
+P_aminovorans_JCM7685  : JCM7685         
