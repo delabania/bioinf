@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from collections import namedtuple, defaultdict
-from phylip import save_to_file
+from phylip import save_to_file, fill_to_ten_characters
 
 CONFIG = """
 alignment = {filename}.phy;
@@ -116,7 +116,13 @@ def main():
     full_genome = get_full_bacteria_genome()
     genome = translate(full_genome)
     # print(full_genome['P_yeei_TT13'])
-    save_to_file(genome)
+    #save_to_file(genome)
+    save_to_file_normal(genome)
+
+def save_to_file_normal(genome):
+    for bacteria, bacteria_genome in genome.iteritems():
+        name = fill_to_ten_characters(bacteria)
+        print name + bacteria_genome
 
 
 

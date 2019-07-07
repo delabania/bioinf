@@ -1,0 +1,73 @@
+Scheme Name       : step_3
+Scheme lnL        : -38310.593994140625
+Scheme AICc       : 76836.7950412
+Number of params  : 105
+Number of sites   : 4076
+Number of subsets : 4
+
+Subset | Best Model | # sites    | subset id                        | Partition names                                                                                     
+1      | VT+F       | 1923       | 529bf31ba5aabf57187213952eaf11f9 | gyrB, rpoB                                                                                          
+2      | BLOSUM62+F | 317        | 2fb1f913df8fc932fb1de8e14e07f102 | recA                                                                                                
+3      | VT+I+F     | 836        | a6794e56b41e1ce7fbae9986231a8a91 | atpD, thrC                                                                                          
+4      | BLOSUM62+I+G+F | 1000       | 33f5cd35c97b5904457cece1d0686447 | dnaK, dnaA                                                                                          
+
+
+Scheme Description in PartitionFinder format
+Scheme_step_3 = (gyrB, rpoB) (recA) (atpD, thrC) (dnaK, dnaA);
+
+Nexus formatted character sets
+begin sets;
+	charset Subset1 = 1-711 1872-3083;
+	charset Subset2 = 712-1028;
+	charset Subset3 = 3655-4076 1029-1442;
+	charset Subset4 = 3084-3654 1443-1871;
+	charpartition PartitionFinder = Group1:Subset1, Group2:Subset2, Group3:Subset3, Group4:Subset4;
+end;
+
+
+Nexus formatted character sets for IQtree
+Warning: the models written in the charpartition are just the best model found in this analysis. Not all models are available in IQtree, so you may need to set up specific model lists for your analysis
+
+#nexus
+begin sets;
+	charset Subset1 = 1-711 1872-3083;
+	charset Subset2 = 712-1028;
+	charset Subset3 = 3655-4076 1029-1442;
+	charset Subset4 = 3084-3654 1443-1871;
+	charpartition PartitionFinder = VT+F:Subset1, BLOSUM62+F:Subset2, VT+I+F:Subset3, BLOSUM62+I+G+F:Subset4;
+end;
+
+
+RaxML-style partition definitions
+Warning: RAxML allows for only a single model of rate heterogeneity in partitioned analyses. I.e. all partitions must be assigned one of three types of model: No heterogeneity (e.g. GTR); +G (e.g. GTR+G); or +I+G (e.g. GTR+I+G). If the best models for your datasetcontain different types of model for different subsets you will need to decide on the best rate heterogeneity model before you run RAxML. If you prefer to do things more rigorously, you can run separate PartitionFinder analyses for each type of rate heterogenetity Then choose the scheme with the lowest AIC/AICc/BIC score. Note that these re-runs will be quick!
+
+VTF, Subset1 = 1-711, 1872-3083
+BLOSUM62F, Subset2 = 712-1028
+VTF, Subset3 = 3655-4076, 1029-1442
+BLOSUM62F, Subset4 = 3084-3654, 1443-1871
+
+
+MrBayes block for partition definitions
+Warning: MrBayes only allows a relatively small collection of models. If any model in your analysis is not one that is included in MrBayes (e.g. by setting nst = 1, 2, or 6 for DNA sequences; or is not in the available list of protein models for MrBayes)then this MrBayes block will just set that model to nst = 6 for DNA, or 'wag' for Protein. Similarly, the only additional parameters that this MrBayes block will include are +I and +G. Other  parameters, such as +F and +X, are ignored. If you want to use this MrBayes block for your analysis, please make sure to check it carefully before you use it we've done our best to make it accurate, but there may be errors that remain!
+
+begin mrbayes;
+
+	charset Subset1 = 1-711 1872-3083;
+	charset Subset2 = 712-1028;
+	charset Subset3 = 3655-4076 1029-1442;
+	charset Subset4 = 3084-3654 1443-1871;
+
+	partition PartitionFinder = 4:Subset1, Subset2, Subset3, Subset4;
+	set partition=PartitionFinder;
+
+	prset applyto=(1) aamodelpr=fixed(vt);
+	prset applyto=(2) aamodelpr=fixed(wag);
+	lset applyto=(3) rates=propinv;
+	prset applyto=(3) aamodelpr=fixed(vt);
+	lset applyto=(4) rates=invgamma;
+	prset applyto=(4) aamodelpr=fixed(wag);
+
+	prset applyto=(all) ratepr=variable;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
+
+end;

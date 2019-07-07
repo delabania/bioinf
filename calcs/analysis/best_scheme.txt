@@ -1,0 +1,100 @@
+Settings used
+
+alignment         : ./normal.phy
+branchlengths     : linked
+models            : LG, WAG, MTREV, DAYHOFF, DCMUT, JTT, VT, BLOSUM62, CPREV, RTREV, MTMAM, MTART, HIVB, HIVW, LG+F, WAG+F, MTREV+F, DAYHOFF+F, DCMUT+F, JTT+F, VT+F, BLOSUM62+F, CPREV+F, RTREV+F, MTMAM+F, MTART+F, HIVB+F, HIVW+F, LG+G, WAG+G, MTREV+G, DAYHOFF+G, DCMUT+G, JTT+G, VT+G, BLOSUM62+G, CPREV+G, RTREV+G, MTMAM+G, MTART+G, HIVB+G, HIVW+G, LG+G+F, WAG+G+F, MTREV+G+F, DAYHOFF+G+F, DCMUT+G+F, JTT+G+F, VT+G+F, BLOSUM62+G+F, CPREV+G+F, RTREV+G+F, MTMAM+G+F, MTART+G+F, HIVB+G+F, HIVW+G+F, LG+I, WAG+I, MTREV+I, DAYHOFF+I, DCMUT+I, JTT+I, VT+I, BLOSUM62+I, CPREV+I, RTREV+I, MTMAM+I, MTART+I, HIVB+I, HIVW+I, LG+I+F, WAG+I+F, MTREV+I+F, DAYHOFF+I+F, DCMUT+I+F, JTT+I+F, VT+I+F, BLOSUM62+I+F, CPREV+I+F, RTREV+I+F, MTMAM+I+F, MTART+I+F, HIVB+I+F, HIVW+I+F, LG+I+G, WAG+I+G, MTREV+I+G, DAYHOFF+I+G, DCMUT+I+G, JTT+I+G, VT+I+G, BLOSUM62+I+G, CPREV+I+G, RTREV+I+G, MTMAM+I+G, MTART+I+G, HIVB+I+G, HIVW+I+G, LG+I+G+F, WAG+I+G+F, MTREV+I+G+F, DAYHOFF+I+G+F, DCMUT+I+G+F, JTT+I+G+F, VT+I+G+F, BLOSUM62+I+G+F, CPREV+I+G+F, RTREV+I+G+F, MTMAM+I+G+F, MTART+I+G+F, HIVB+I+G+F, HIVW+I+G+F
+model_selection   : aicc
+search            : greedy
+
+
+Best partitioning scheme
+
+Scheme Name       : step_3
+Scheme lnL        : -38310.593994140625
+Scheme AICc       : 76836.7950412
+Number of params  : 105
+Number of sites   : 4076
+Number of subsets : 4
+
+Subset | Best Model | # sites    | subset id                        | Partition names                                                                                     
+1      | VT+F       | 1923       | 529bf31ba5aabf57187213952eaf11f9 | gyrB, rpoB                                                                                          
+2      | BLOSUM62+F | 317        | 2fb1f913df8fc932fb1de8e14e07f102 | recA                                                                                                
+3      | VT+I+F     | 836        | a6794e56b41e1ce7fbae9986231a8a91 | atpD, thrC                                                                                          
+4      | BLOSUM62+I+G+F | 1000       | 33f5cd35c97b5904457cece1d0686447 | dnaK, dnaA                                                                                          
+
+
+Scheme Description in PartitionFinder format
+Scheme_step_3 = (gyrB, rpoB) (recA) (atpD, thrC) (dnaK, dnaA);
+
+Nexus formatted character sets
+begin sets;
+	charset Subset1 = 1-711 1872-3083;
+	charset Subset2 = 712-1028;
+	charset Subset3 = 3655-4076 1029-1442;
+	charset Subset4 = 3084-3654 1443-1871;
+	charpartition PartitionFinder = Group1:Subset1, Group2:Subset2, Group3:Subset3, Group4:Subset4;
+end;
+
+
+Nexus formatted character sets for IQtree
+Warning: the models written in the charpartition are just the best model found in this analysis. Not all models are available in IQtree, so you may need to set up specific model lists for your analysis
+
+#nexus
+begin sets;
+	charset Subset1 = 1-711 1872-3083;
+	charset Subset2 = 712-1028;
+	charset Subset3 = 3655-4076 1029-1442;
+	charset Subset4 = 3084-3654 1443-1871;
+	charpartition PartitionFinder = VT+F:Subset1, BLOSUM62+F:Subset2, VT+I+F:Subset3, BLOSUM62+I+G+F:Subset4;
+end;
+
+
+RaxML-style partition definitions
+Warning: RAxML allows for only a single model of rate heterogeneity in partitioned analyses. I.e. all partitions must be assigned one of three types of model: No heterogeneity (e.g. GTR); +G (e.g. GTR+G); or +I+G (e.g. GTR+I+G). If the best models for your datasetcontain different types of model for different subsets you will need to decide on the best rate heterogeneity model before you run RAxML. If you prefer to do things more rigorously, you can run separate PartitionFinder analyses for each type of rate heterogenetity Then choose the scheme with the lowest AIC/AICc/BIC score. Note that these re-runs will be quick!
+
+VTF, Subset1 = 1-711, 1872-3083
+BLOSUM62F, Subset2 = 712-1028
+VTF, Subset3 = 3655-4076, 1029-1442
+BLOSUM62F, Subset4 = 3084-3654, 1443-1871
+
+
+MrBayes block for partition definitions
+Warning: MrBayes only allows a relatively small collection of models. If any model in your analysis is not one that is included in MrBayes (e.g. by setting nst = 1, 2, or 6 for DNA sequences; or is not in the available list of protein models for MrBayes)then this MrBayes block will just set that model to nst = 6 for DNA, or 'wag' for Protein. Similarly, the only additional parameters that this MrBayes block will include are +I and +G. Other  parameters, such as +F and +X, are ignored. If you want to use this MrBayes block for your analysis, please make sure to check it carefully before you use it we've done our best to make it accurate, but there may be errors that remain!
+
+begin mrbayes;
+
+	charset Subset1 = 1-711 1872-3083;
+	charset Subset2 = 712-1028;
+	charset Subset3 = 3655-4076 1029-1442;
+	charset Subset4 = 3084-3654 1443-1871;
+
+	partition PartitionFinder = 4:Subset1, Subset2, Subset3, Subset4;
+	set partition=PartitionFinder;
+
+	prset applyto=(1) aamodelpr=fixed(vt);
+	prset applyto=(2) aamodelpr=fixed(wag);
+	lset applyto=(3) rates=propinv;
+	prset applyto=(3) aamodelpr=fixed(vt);
+	lset applyto=(4) rates=invgamma;
+	prset applyto=(4) aamodelpr=fixed(wag);
+
+	prset applyto=(all) ratepr=variable;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
+
+end;
+
+
+
+*Citations for this analysis*
+-----------------------------
+If you use this analysis in your published work, please cite the following papers on which your analysis relied.
+
+For the version of PartitionFinder you used, please cite:
+Lanfear, R., Frandsen, P. B., Wright, A. M., Senfeld, T., Calcott, B. (2016) PartitionFinder 2: new methods for selecting partitioned models of evolution formolecular and morphological phylogenetic analyses. Molecular biology and evolution. DOI: dx.doi.org/10.1093/molbev/msw260
+
+For the greedy algorithm you used, please cite:
+Lanfear, R., Calcott, B., Ho, S. Y., & Guindon, S. (2012). PartitionFinder: combined selection of partitioning schemes and substitution models for phylogenetic analyses. Molecular biology and evolution, 29(6), 1695-1701.
+
+Your analysis also used PhyML, so please cite:
+Guindon, S., Dufayard, J. F., Lefort, V., Anisimova, M., Hordijk, W., & Gascuel, O. (2010). New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. Systematic biology, 59(3), 307-321.
+

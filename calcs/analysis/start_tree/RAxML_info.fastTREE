@@ -1,0 +1,121 @@
+
+
+WARNING: RAxML is not checking sequences for duplicate seqs and sites with missing data!
+
+
+
+This is RAxML version 8.2.9 released by Alexandros Stamatakis on July 20 2016.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 2022 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 1.15%
+
+RAxML experimental very fast tree search
+
+Using 7 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 10.0000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 271
+Name: Subset1
+DataType: AA
+Substitution Matrix: LG
+Using fixed base frequencies
+
+
+
+Partition: 1
+Alignment Patterns: 169
+Name: Subset2
+DataType: AA
+Substitution Matrix: LG
+Using fixed base frequencies
+
+
+
+Partition: 2
+Alignment Patterns: 237
+Name: Subset3
+DataType: AA
+Substitution Matrix: LG
+Using fixed base frequencies
+
+
+
+Partition: 3
+Alignment Patterns: 420
+Name: Subset4
+DataType: AA
+Substitution Matrix: LG
+Using fixed base frequencies
+
+
+
+Partition: 4
+Alignment Patterns: 321
+Name: Subset5
+DataType: AA
+Substitution Matrix: LG
+Using fixed base frequencies
+
+
+
+Partition: 5
+Alignment Patterns: 386
+Name: Subset6
+DataType: AA
+Substitution Matrix: LG
+Using fixed base frequencies
+
+
+
+Partition: 6
+Alignment Patterns: 218
+Name: Subset7
+DataType: AA
+Substitution Matrix: LG
+Using fixed base frequencies
+
+
+
+
+RAxML was called as follows:
+
+/home/henryk/personal_projects/bioinf/partitionfinder-2.1.1/programs/raxml_pthreads.linux -f E -s ./analysis/start_tree/filtered_source.phy -m PROTGAMMALG -O -n fastTREE -# 1 -p 123456789 -q ./analysis/start_tree/partitions.txt -e 10 -w /home/henryk/personal_projects/bioinf/calcs/analysis/start_tree -T 4 
+
+
+Time after init : 0.034501
+Time after init and starting tree: 0.816015
+Time after init, starting tree, mod opt: 3.225722
+Partion 0 number of Cats: 1
+Partion 1 number of Cats: 1
+Partion 2 number of Cats: 1
+Partion 3 number of Cats: 1
+Partion 4 number of Cats: 1
+Partion 5 number of Cats: 1
+Partion 6 number of Cats: 1
+LH after SPRs -41036.894827, after NNI -41035.982649
+LH after SPRs -41035.982649, after NNI -41035.982159
+RAxML fast tree written to file: /home/henryk/personal_projects/bioinf/calcs/analysis/start_tree/RAxML_fastTree.fastTREE
+
+Model parameters (binary file format) written to: /home/henryk/personal_projects/bioinf/calcs/analysis/start_tree/RAxML_binaryModelParameters.fastTREE
+Total execution time: 22.910932
+Good bye ... 

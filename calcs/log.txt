@@ -1,0 +1,195 @@
+INFO     | 2019-07-07 17:18:15,879 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2019-07-07 17:18:15,883 | config     | Setting 'alignment' to 'genom.phy'
+INFO     | 2019-07-07 17:18:15,884 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2019-07-07 17:18:15,884 | parser     | You set 'models' to: all
+INFO     | 2019-07-07 17:18:15,908 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2019-07-07 17:18:15,909 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2019-07-07 17:18:15,909 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2019-07-07 17:18:15,914 | config     | Setting 'search' to 'greedy'
+INFO     | 2019-07-07 17:18:15,915 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2019-07-07 17:18:15,915 | config     | Looking for alignment file './genom.phy'...
+INFO     | 2019-07-07 17:18:15,915 | threadpool | Using 4 cpus
+INFO     | 2019-07-07 17:18:15,915 | analysis   | Beginning Analysis
+INFO     | 2019-07-07 17:18:15,933 | alignment  | Reading alignment file './genom.phy'
+ERROR    | 2019-07-07 17:18:15,933 | alignment  | Line 1: Failed to find the Phyml header that specifies the species count, and sequence length
+ERROR    | 2019-07-07 17:18:15,935 | main       | Failed to run. See previous errors.
+INFO     | 2019-07-07 17:18:42,556 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2019-07-07 17:18:42,561 | config     | Setting 'alignment' to 'genom.phy'
+INFO     | 2019-07-07 17:18:42,561 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2019-07-07 17:18:42,562 | parser     | You set 'models' to: all
+INFO     | 2019-07-07 17:18:42,586 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2019-07-07 17:18:42,586 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2019-07-07 17:18:42,587 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2019-07-07 17:18:42,591 | config     | Setting 'search' to 'greedy'
+INFO     | 2019-07-07 17:18:42,591 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2019-07-07 17:18:42,592 | config     | Looking for alignment file './genom.phy'...
+INFO     | 2019-07-07 17:18:42,592 | threadpool | Using 4 cpus
+INFO     | 2019-07-07 17:18:42,592 | analysis   | Beginning Analysis
+INFO     | 2019-07-07 17:18:42,623 | alignment  | Reading alignment file './genom.phy'
+ERROR    | 2019-07-07 17:18:42,623 | alignment  | Line 1: Failed to find the Phyml header that specifies the species count, and sequence length
+ERROR    | 2019-07-07 17:18:42,625 | main       | Failed to run. See previous errors.
+INFO     | 2019-07-07 17:24:39,902 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2019-07-07 17:24:39,907 | config     | Setting 'alignment' to 'normal.phy'
+INFO     | 2019-07-07 17:24:39,908 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2019-07-07 17:24:39,908 | parser     | You set 'models' to: all
+INFO     | 2019-07-07 17:24:39,932 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2019-07-07 17:24:39,933 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2019-07-07 17:24:39,933 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2019-07-07 17:24:39,939 | config     | Setting 'search' to 'greedy'
+INFO     | 2019-07-07 17:24:39,939 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2019-07-07 17:24:39,939 | config     | Looking for alignment file './normal.phy'...
+INFO     | 2019-07-07 17:24:39,939 | threadpool | Using 4 cpus
+INFO     | 2019-07-07 17:24:39,939 | analysis   | Beginning Analysis
+INFO     | 2019-07-07 17:24:39,970 | alignment  | Reading alignment file './normal.phy'
+ERROR    | 2019-07-07 17:24:39,970 | alignment  | Line 1: Failed to find the Phyml header that specifies the species count, and sequence length
+ERROR    | 2019-07-07 17:24:39,972 | main       | Failed to run. See previous errors.
+INFO     | 2019-07-07 17:24:59,161 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2019-07-07 17:24:59,166 | config     | Setting 'alignment' to 'normal.phy'
+INFO     | 2019-07-07 17:24:59,167 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2019-07-07 17:24:59,167 | parser     | You set 'models' to: all
+INFO     | 2019-07-07 17:24:59,190 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2019-07-07 17:24:59,190 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2019-07-07 17:24:59,191 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2019-07-07 17:24:59,195 | config     | Setting 'search' to 'greedy'
+INFO     | 2019-07-07 17:24:59,195 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2019-07-07 17:24:59,196 | config     | Looking for alignment file './normal.phy'...
+INFO     | 2019-07-07 17:24:59,196 | threadpool | Using 4 cpus
+INFO     | 2019-07-07 17:24:59,196 | analysis   | Beginning Analysis
+INFO     | 2019-07-07 17:24:59,227 | alignment  | Reading alignment file './normal.phy'
+ERROR    | 2019-07-07 17:24:59,227 | alignment  | Line 2: Line should be species and bases separated by whitespace
+ERROR    | 2019-07-07 17:24:59,229 | main       | Failed to run. See previous errors.
+INFO     | 2019-07-07 17:25:28,363 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2019-07-07 17:25:28,368 | config     | Setting 'alignment' to 'normal.phy'
+INFO     | 2019-07-07 17:25:28,368 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2019-07-07 17:25:28,368 | parser     | You set 'models' to: all
+INFO     | 2019-07-07 17:25:28,392 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2019-07-07 17:25:28,393 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2019-07-07 17:25:28,394 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2019-07-07 17:25:28,398 | config     | Setting 'search' to 'greedy'
+INFO     | 2019-07-07 17:25:28,399 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2019-07-07 17:25:28,399 | config     | Looking for alignment file './normal.phy'...
+INFO     | 2019-07-07 17:25:28,399 | threadpool | Using 4 cpus
+INFO     | 2019-07-07 17:25:28,399 | analysis   | Beginning Analysis
+INFO     | 2019-07-07 17:25:28,429 | alignment  | Reading alignment file './normal.phy'
+ERROR    | 2019-07-07 17:25:28,430 | alignment  | Line 3: Line should be species and bases separated by whitespace
+ERROR    | 2019-07-07 17:25:28,431 | main       | Failed to run. See previous errors.
+INFO     | 2019-07-07 17:26:18,994 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2019-07-07 17:26:18,999 | config     | Setting 'alignment' to 'normal.phy'
+INFO     | 2019-07-07 17:26:19,000 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2019-07-07 17:26:19,000 | parser     | You set 'models' to: all
+INFO     | 2019-07-07 17:26:19,024 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2019-07-07 17:26:19,024 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2019-07-07 17:26:19,024 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2019-07-07 17:26:19,029 | config     | Setting 'search' to 'greedy'
+INFO     | 2019-07-07 17:26:19,029 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2019-07-07 17:26:19,029 | config     | Looking for alignment file './normal.phy'...
+INFO     | 2019-07-07 17:26:19,029 | threadpool | Using 4 cpus
+INFO     | 2019-07-07 17:26:19,030 | analysis   | Beginning Analysis
+INFO     | 2019-07-07 17:26:19,060 | alignment  | Reading alignment file './normal.phy'
+INFO     | 2019-07-07 17:26:19,064 | analysis   | Starting tree will be estimated from the data.
+INFO     | 2019-07-07 17:26:19,065 | raxml      | Estimating Maximum Likelihood tree with RAxML fast experimental tree search for ./analysis/start_tree/filtered_source.phy
+INFO     | 2019-07-07 17:26:19,066 | raxml      | Using a separate GTR+G model for each data block
+ERROR    | 2019-07-07 17:26:19,077 | main       | A program that Partitionfinder uses failed. Output follows, in case it's helpful for finding the problem
+ERROR    | 2019-07-07 17:26:19,078 | main       | 
+ERROR    | 2019-07-07 17:26:19,078 | main       | Warning, you specified a working directory via "-w" Keep in mind that RAxML only accepts absolute path names, not relative ones! ERROR: Bad base (P) at site 1 of sequence 1 Printing error context: 3 4076 UG_32054 PQPSEYGADSIKVLKGLEAVR Problem reading alignment file
+INFO     | 2019-07-07 17:31:18,623 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2019-07-07 17:31:18,629 | config     | Setting 'alignment' to 'normal.phy'
+INFO     | 2019-07-07 17:31:18,629 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2019-07-07 17:31:18,629 | parser     | You set 'models' to: all
+INFO     | 2019-07-07 17:31:18,656 | model_load | This analysis will use the following 112 models of molecular evolution
+INFO     | 2019-07-07 17:31:18,656 | model_load | LG, WAG, MTREV, DAYHOFF, DCMUT, JTT, VT, BLOSUM62, CPREV, RTREV, MTMAM, MTART, HIVB, HIVW, LG+F, WAG+F, MTREV+F, DAYHOFF+F, DCMUT+F, JTT+F, VT+F, BLOSUM62+F, CPREV+F, RTREV+F, MTMAM+F, MTART+F, HIVB+F, HIVW+F, LG+G, WAG+G, MTREV+G, DAYHOFF+G, DCMUT+G, JTT+G, VT+G, BLOSUM62+G, CPREV+G, RTREV+G, MTMAM+G, MTART+G, HIVB+G, HIVW+G, LG+G+F, WAG+G+F, MTREV+G+F, DAYHOFF+G+F, DCMUT+G+F, JTT+G+F, VT+G+F, BLOSUM62+G+F, CPREV+G+F, RTREV+G+F, MTMAM+G+F, MTART+G+F, HIVB+G+F, HIVW+G+F, LG+I, WAG+I, MTREV+I, DAYHOFF+I, DCMUT+I, JTT+I, VT+I, BLOSUM62+I, CPREV+I, RTREV+I, MTMAM+I, MTART+I, HIVB+I, HIVW+I, LG+I+F, WAG+I+F, MTREV+I+F, DAYHOFF+I+F, DCMUT+I+F, JTT+I+F, VT+I+F, BLOSUM62+I+F, CPREV+I+F, RTREV+I+F, MTMAM+I+F, MTART+I+F, HIVB+I+F, HIVW+I+F, LG+I+G, WAG+I+G, MTREV+I+G, DAYHOFF+I+G, DCMUT+I+G, JTT+I+G, VT+I+G, BLOSUM62+I+G, CPREV+I+G, RTREV+I+G, MTMAM+I+G, MTART+I+G, HIVB+I+G, HIVW+I+G, LG+I+G+F, WAG+I+G+F, MTREV+I+G+F, DAYHOFF+I+G+F, DCMUT+I+G+F, JTT+I+G+F, VT+I+G+F, BLOSUM62+I+G+F, CPREV+I+G+F, RTREV+I+G+F, MTMAM+I+G+F, MTART+I+G+F, HIVB+I+G+F, HIVW+I+G+F
+INFO     | 2019-07-07 17:31:18,657 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2019-07-07 17:31:18,661 | config     | Setting 'search' to 'greedy'
+INFO     | 2019-07-07 17:31:18,661 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2019-07-07 17:31:18,661 | config     | Looking for alignment file './normal.phy'...
+INFO     | 2019-07-07 17:31:18,662 | threadpool | Using 4 cpus
+INFO     | 2019-07-07 17:31:18,662 | analysis   | Beginning Analysis
+INFO     | 2019-07-07 17:31:18,691 | alignment  | Reading alignment file './normal.phy'
+INFO     | 2019-07-07 17:31:18,692 | alignment  | Reading alignment file './analysis/start_tree/source.phy'
+INFO     | 2019-07-07 17:31:18,696 | analysis   | Starting tree will be estimated from the data.
+INFO     | 2019-07-07 17:31:18,697 | raxml      | Estimating Maximum Likelihood tree with RAxML fast experimental tree search for ./analysis/start_tree/filtered_source.phy
+INFO     | 2019-07-07 17:31:18,698 | raxml      | Using a separate LG+G model for each data block
+INFO     | 2019-07-07 17:31:41,618 | raxml      | Estimating LG+G branch lengths on ML tree using all partitions
+INFO     | 2019-07-07 17:31:46,234 | raxml      | ML topology estimation finished
+INFO     | 2019-07-07 17:31:46,235 | analysis_m | Performing Greedy Analysis
+INFO     | 2019-07-07 17:31:46,235 | analysis_m |    *** Analysing starting scheme ***
+INFO     | 2019-07-07 17:33:50,934 | progress   |       Finished subset 1/7, 14.29 percent done
+INFO     | 2019-07-07 17:35:31,483 | progress   |       Finished subset 2/7, 28.57 percent done
+INFO     | 2019-07-07 17:37:21,223 | progress   |       Finished subset 3/7, 42.86 percent done
+INFO     | 2019-07-07 17:39:47,129 | progress   |       Finished subset 4/7, 57.14 percent done
+INFO     | 2019-07-07 17:40:35,999 | progress   |       Finished subset 5/7, 71.43 percent done
+INFO     | 2019-07-07 17:41:32,897 | progress   |       Finished subset 6/7, 85.71 percent done
+INFO     | 2019-07-07 17:42:32,968 | progress   |       Finished subset 7/7, 100.00 percent done
+INFO     | 2019-07-07 17:42:32,970 | analysis_m |    ***Greedy algorithm step 1***
+INFO     | 2019-07-07 17:42:32,970 | analysis_m |       Analysing 21 new subset pairs
+INFO     | 2019-07-07 17:46:10,050 | progress   |       Finished subset 1/21, 4.76 percent done
+INFO     | 2019-07-07 17:51:26,707 | progress   |       Finished subset 2/21, 9.52 percent done
+INFO     | 2019-07-07 17:55:21,889 | progress   |       Finished subset 3/21, 14.29 percent done
+INFO     | 2019-07-07 17:58:26,868 | progress   |       Finished subset 4/21, 19.05 percent done
+INFO     | 2019-07-07 18:01:36,223 | progress   |       Finished subset 5/21, 23.81 percent done
+INFO     | 2019-07-07 18:04:33,315 | progress   |       Finished subset 6/21, 28.57 percent done
+INFO     | 2019-07-07 18:08:21,866 | progress   |       Finished subset 7/21, 33.33 percent done
+INFO     | 2019-07-07 18:11:54,229 | progress   |       Finished subset 8/21, 38.10 percent done
+INFO     | 2019-07-07 18:14:46,175 | progress   |       Finished subset 9/21, 42.86 percent done
+INFO     | 2019-07-07 18:17:35,859 | progress   |       Finished subset 10/21, 47.62 percent done
+INFO     | 2019-07-07 18:20:08,747 | progress   |       Finished subset 11/21, 52.38 percent done
+INFO     | 2019-07-07 18:23:59,266 | progress   |       Finished subset 12/21, 57.14 percent done
+INFO     | 2019-07-07 18:26:33,888 | progress   |       Finished subset 13/21, 61.90 percent done
+INFO     | 2019-07-07 18:29:13,661 | progress   |       Finished subset 14/21, 66.67 percent done
+INFO     | 2019-07-07 18:32:20,785 | progress   |       Finished subset 15/21, 71.43 percent done
+INFO     | 2019-07-07 18:35:03,023 | progress   |       Finished subset 16/21, 76.19 percent done
+INFO     | 2019-07-07 18:37:51,286 | progress   |       Finished subset 17/21, 80.95 percent done
+INFO     | 2019-07-07 18:39:17,127 | progress   |       Finished subset 18/21, 85.71 percent done
+INFO     | 2019-07-07 18:42:15,786 | progress   |       Finished subset 19/21, 90.48 percent done
+INFO     | 2019-07-07 18:43:50,823 | progress   |       Finished subset 20/21, 95.24 percent done
+INFO     | 2019-07-07 18:45:44,903 | progress   |       Finished subset 21/21, 100.00 percent done
+INFO     | 2019-07-07 18:45:44,904 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2019-07-07 18:45:44,912 | analysis_m |       Best scheme combines subsets: 'atpD' and 'thrC'
+INFO     | 2019-07-07 18:45:44,912 | analysis_m |       The best scheme improves the aicc score by 117.54 to 77022.1
+INFO     | 2019-07-07 18:45:44,914 | analysis_m |    ***Greedy algorithm step 2***
+INFO     | 2019-07-07 18:45:44,914 | analysis_m |       Analysing 5 new subset pairs
+INFO     | 2019-07-07 18:50:02,549 | progress   |       Finished subset 1/5, 20.00 percent done
+INFO     | 2019-07-07 18:54:07,922 | progress   |       Finished subset 2/5, 40.00 percent done
+INFO     | 2019-07-07 18:57:14,195 | progress   |       Finished subset 3/5, 60.00 percent done
+INFO     | 2019-07-07 19:00:35,178 | progress   |       Finished subset 4/5, 80.00 percent done
+INFO     | 2019-07-07 19:02:45,296 | progress   |       Finished subset 5/5, 100.00 percent done
+INFO     | 2019-07-07 19:02:45,297 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2019-07-07 19:02:45,300 | analysis_m |       Best scheme combines subsets: 'gyrB' and 'rpoB'
+INFO     | 2019-07-07 19:02:45,300 | analysis_m |       The best scheme improves the aicc score by 99.46 to 76922.6
+INFO     | 2019-07-07 19:02:45,301 | analysis_m |    ***Greedy algorithm step 3***
+INFO     | 2019-07-07 19:02:45,302 | analysis_m |       Analysing 4 new subset pairs
+INFO     | 2019-07-07 19:09:12,566 | progress   |       Finished subset 1/4, 25.00 percent done
+INFO     | 2019-07-07 19:14:52,601 | progress   |       Finished subset 2/4, 50.00 percent done
+INFO     | 2019-07-07 19:20:20,235 | progress   |       Finished subset 3/4, 75.00 percent done
+INFO     | 2019-07-07 19:24:50,456 | progress   |       Finished subset 4/4, 100.00 percent done
+INFO     | 2019-07-07 19:24:50,456 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2019-07-07 19:24:50,459 | analysis_m |       Best scheme combines subsets: 'dnaK' and 'dnaA'
+INFO     | 2019-07-07 19:24:50,460 | analysis_m |       The best scheme improves the aicc score by 85.83 to 76836.8
+INFO     | 2019-07-07 19:24:50,461 | analysis_m |    ***Greedy algorithm step 4***
+INFO     | 2019-07-07 19:24:50,461 | analysis_m |       Analysing 3 new subset pairs
+INFO     | 2019-07-07 19:32:24,538 | progress   |       Finished subset 1/3, 33.33 percent done
+INFO     | 2019-07-07 19:37:26,350 | progress   |       Finished subset 2/3, 66.67 percent done
+INFO     | 2019-07-07 19:43:10,809 | progress   |       Finished subset 3/3, 100.00 percent done
+INFO     | 2019-07-07 19:43:10,810 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2019-07-07 19:43:10,811 | analysis_m |       Found no schemes that improve the score, stopping
+INFO     | 2019-07-07 19:43:10,811 | analysis_m |    Greedy algorithm finished after 4 steps
+INFO     | 2019-07-07 19:43:10,812 | analysis_m |    Best scoring scheme is scheme step_3, with aicc score of 76836.795
+INFO     | 2019-07-07 19:43:10,812 | model_util |    Information on best scheme is here: ./analysis/best_scheme.txt
+INFO     | 2019-07-07 19:43:10,818 | model_util |    
+INFO     | 2019-07-07 19:43:10,818 | model_util |    
+INFO     | 2019-07-07 19:43:10,818 | model_util |    *Citations for this analysis*
+INFO     | 2019-07-07 19:43:10,818 | model_util |    -----------------------------
+INFO     | 2019-07-07 19:43:10,819 | model_util |    
+INFO     | 2019-07-07 19:43:10,819 | model_util |    If you use this analysis in your published work, please cite the following papers on which your analysis relied.
+INFO     | 2019-07-07 19:43:10,819 | model_util |    
+INFO     | 2019-07-07 19:43:10,819 | model_util |    For the version of PartitionFinder you used, please cite:
+INFO     | 2019-07-07 19:43:10,819 | model_util |    Lanfear, R., Frandsen, P. B., Wright, A. M., Senfeld, T., Calcott, B. (2016) PartitionFinder 2: new methods for selecting partitioned models of evolution formolecular and morphological phylogenetic analyses. Molecular biology and evolution. DOI: dx.doi.org/10.1093/molbev/msw260
+INFO     | 2019-07-07 19:43:10,819 | model_util |    
+INFO     | 2019-07-07 19:43:10,819 | model_util |    For the greedy algorithm you used, please cite:
+INFO     | 2019-07-07 19:43:10,820 | model_util |    Lanfear, R., Calcott, B., Ho, S. Y., & Guindon, S. (2012). PartitionFinder: combined selection of partitioning schemes and substitution models for phylogenetic analyses. Molecular biology and evolution, 29(6), 1695-1701.
+INFO     | 2019-07-07 19:43:10,820 | model_util |    
+INFO     | 2019-07-07 19:43:10,820 | model_util |    Your analysis also used PhyML, so please cite:
+INFO     | 2019-07-07 19:43:10,820 | model_util |    Guindon, S., Dufayard, J. F., Lefort, V., Anisimova, M., Hordijk, W., & Gascuel, O. (2010). New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. Systematic biology, 59(3), 307-321.
+INFO     | 2019-07-07 19:43:10,820 | model_util |    
+INFO     | 2019-07-07 19:43:10,823 | main       | Total processing time: 2:11:52 (h:m:s)
+INFO     | 2019-07-07 19:43:10,824 | main       | Processing complete.

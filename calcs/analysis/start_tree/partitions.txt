@@ -1,0 +1,7 @@
+LG, Subset1 = 1-711
+LG, Subset2 = 712-1028
+LG, Subset3 = 1029-1442
+LG, Subset4 = 1443-1871
+LG, Subset5 = 1872-3083
+LG, Subset6 = 3084-3654
+LG, Subset7 = 3655-4076
