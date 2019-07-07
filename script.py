@@ -1,7 +1,44 @@
 #!/usr/bin/env python
 from collections import namedtuple, defaultdict
 
-BacteriaPartDNA = namedtuple('BacteriaPartDNA', 'gene_name dna_part_sequence length')
+
+CONFIG = """
+alignment = {filename}.phy;
+branchlengths = linked;
+
+models = all;
+model_selection = aicc;
+
+[data_blocks]
+gyrB = 1-711;
+recA = 712-1028;
+thrC = 1029-1442;
+dnaA = 1443-1871;
+rpoB = 1872-3083;
+dnaK = 3084-3654;
+atpD = 3655-4076;
+[schemes]
+search = greedy;
+"""
+
+
+def get_gene_pos_info_line(gene, current_end, sequence_info):
+    start = current_end
+    end = current_end + sequence_info.length - 1
+    line = '{gene} = {start}-{end};'.format(gene=gene, start=start, end=end)
+    return line
+
+class BacteriaPartDNA:
+    def __init__(self):
+        self.dna_sequence = ''
+        self.length = 0
+
+    def append(self, dna):
+        self.dna_sequence += dna
+        self.length += len(dna)
+
+    def __str__(self):
+        return self.dna_sequence
 
 FILES = [
     'atpD trimAI.out',  'dnaK trimAL.out',
@@ -10,7 +47,7 @@ FILES = [
 ]
 
 
-BACTERIA_GENOME = defaultdict(list)
+BACTERIA_GENOME = defaultdict(lambda: defaultdict(BacteriaPartDNA))
 
 def should_skip_line(line):
     return line == '\n' or len(line.split()) != 2
@@ -18,6 +55,11 @@ def should_skip_line(line):
 def get_gene_data(bacteria_gene_name):
     bacteria, gene = bacteria_gene_name.rsplit('_', 1)
     return bacteria, gene
+
+def append_to_dict(bacteria, gene, dna_sequence):
+    bacteria_gene_info = BACTERIA_GENOME[bacteria][gene]
+    bacteria_gene_info.append(dna_sequence)
+
 
 def process_input_file(filename):
     with open(filename) as f:
@@ -29,13 +71,32 @@ def process_input_file(filename):
             if not bacteria_gene_name and not dna_sequence:
                 continue
             bacteria, gene = get_gene_data(bacteria_gene_name)
-            info = BacteriaPartDNA(gene, dna_sequence, len(dna_sequence))
-            BACTERIA_GENOME[bacteria].append(info)
+            append_to_dict(bacteria, gene, dna_sequence)
+
+
+def get_full_bacteria_genome():
+    full_genome = {}
+    for bacteria, bacteria_genome in BACTERIA_GENOME.iteritems():
+        dna = merge_genes(bacteria_genome)
+        full_genome[bacteria] = dna
+    return full_genome
+
+def merge_genes(bacteria_genome):
+    dna_all = ''
+    for gene, dna in bacteria_genome.iteritems():
+        dna_all += dna.dna_sequence
+
+    return dna_all
 
 def main():
     for file in FILES:
         process_input_file(file)
-    print BACTERIA_GENOME.keys()
+    full_genome = get_full_bacteria_genome()
+    print(full_genome['P_yeei_TT13'])
+
+
+
+
 
 if __name__ == '__main__':
     main()
