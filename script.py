@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from collections import namedtuple, defaultdict
-
+from phylip import save_to_file
 
 CONFIG = """
 alignment = {filename}.phy;
@@ -21,6 +21,21 @@ atpD = 3655-4076;
 search = greedy;
 """
 
+BACTERIES_NAMES_ABBR = {
+    'P_yeei_TT13'            : 'TT13',
+    'P_yeei_ATCC_BAA-599'    : 'ATCC_599',
+    'P_yeei_CCUG_32052'      : 'CCUG_32052',
+    'P_yeei_CCUG_17731'      : 'CCUG_17731',
+    'P_yeei_CCUG_32054'      : 'CCUG_32054',
+    'P_yeei_CCUG_13493'      : 'CCUG_13493',
+    'P_yeei_FDAARGOS_252'    : 'FDA_252',
+    'P_yeei_CCUG_54214'      : 'CCUG_54214',
+    'P_yeei_LM_20'           : 'LM_20',
+    'P_yeei_G1212'           : 'G1212',
+    'P_yeei_CCUG_46822'      : 'CCUG_46822',
+    'P_yeei_CCUG_32053'      : 'CCUG_32053',
+    'P_aminovorans_JCM7685'  : 'JCM7685',
+}
 
 def get_gene_pos_info_line(gene, current_end, sequence_info):
     start = current_end
@@ -88,11 +103,20 @@ def merge_genes(bacteria_genome):
 
     return dna_all
 
+def translate(full_genome):
+    new_names_dict = {}
+    for bacteria, genome in full_genome.iteritems():
+        new_name = BACTERIES_NAMES_ABBR[bacteria]
+        new_names_dict[new_name] = genome
+    return new_names_dict
+
 def main():
     for file in FILES:
         process_input_file(file)
     full_genome = get_full_bacteria_genome()
-    print(full_genome['P_yeei_TT13'])
+    genome = translate(full_genome)
+    # print(full_genome['P_yeei_TT13'])
+    save_to_file(genome)
 
 
 
